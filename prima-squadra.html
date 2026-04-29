@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima Squadra | S.P. Fornace Zarattini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { fzblue: { DEFAULT: '#2563eb', dark: '#1e40af' } } } } }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-fzblue-dark text-white shadow-md sticky top-0 z-50">
+        <!-- Navbar identica -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="font-bold text-xl flex items-center gap-2">⚽ S.P. Fornace Zarattini</a>
+                <nav class="hidden md:flex space-x-6 font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="societa.html" class="text-gray-300 hover:text-white transition">Società</a>
+                    <a href="prima-squadra.html" class="text-white hover:text-blue-300 transition">Prima Squadra</a>
+                    <a href="settore-giovanile.html" class="text-gray-300 hover:text-white transition">Settore Giovanile</a>
+                    <a href="contatti.html" class="text-gray-300 hover:text-white transition">Contatti</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        
+        <!-- Colonna Sinistra: Rosa e Staff -->
+        <div class="lg:col-span-2">
+            <h1 class="text-4xl font-extrabold text-fzblue-dark mb-8">La Squadra</h1>
+            
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">Staff Tecnico</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li><strong>Allenatore:</strong> Da definire</li>
+                    <li><strong>Vice Allenatore:</strong> Da definire</li>
+                    <li><strong>Dirigente Accompagnatore:</strong> Da definire</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">Rosa Giocatori</h2>
+                <!-- Puoi espandere questa lista quando avrai i nomi -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-center">
+                    <div>
+                        <h3 class="text-fzblue font-bold mb-2">Portieri</h3>
+                        <p class="text-gray-600 text-sm">Giocatore 1<br>Giocatore 2</p>
+                    </div>
+                    <div>
+                        <h3 class="text-fzblue font-bold mb-2">Difensori</h3>
+                        <p class="text-gray-600 text-sm">Giocatore 3<br>Giocatore 4<br>Giocatore 5</p>
+                    </div>
+                    <div>
+                        <h3 class="text-fzblue font-bold mb-2">Centrocampisti</h3>
+                        <p class="text-gray-600 text-sm">Giocatore 6<br>Giocatore 7<br>Giocatore 8</p>
+                    </div>
+                    <div>
+                        <h3 class="text-fzblue font-bold mb-2">Attaccanti</h3>
+                        <p class="text-gray-600 text-sm">Giocatore 9<br>Giocatore 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colonna Destra: Classifica (Widget Tuttocampo) -->
+        <div class="lg:col-span-1">
+            <h2 class="text-2xl font-bold text-fzblue-dark mb-6">Classifica</h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 min-h-[400px] flex items-center justify-center">
+                <!-- QUI INCOLLERAI IL WIDGET DI TUTTOCAMPO -->
+                <p class="text-gray-400 text-sm text-center">
+                    <em>Iframe Widget Classifica<br>(Generabile gratuitamente su Tuttocampo.it)</em>
+                </p>
+                <!-- Esempio di codice che ti darà Tuttocampo: 
+                <iframe src="https://www.tuttocampo.it/Widget/..." width="100%" height="400" frameborder="0"></iframe> -->
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">&copy; 2026 S.P. Fornace Zarattini. Tutti i diritti riservati.</footer>
+</body>
+</html>
