@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Società | S.P. Fornace Zarattini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { fzblue: { DEFAULT: '#2563eb', dark: '#1e40af' } } } } }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="bg-fzblue-dark text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 font-bold text-xl tracking-tight">
+                    <a href="index.html" class="flex items-center gap-2">⚽ S.P. Fornace Zarattini</a>
+                </div>
+                <nav class="hidden md:flex space-x-6 font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="societa.html" class="text-white hover:text-blue-300 transition">Società</a>
+                    <a href="prima-squadra.html" class="text-gray-300 hover:text-white transition">Prima Squadra</a>
+                    <a href="settore-giovanile.html" class="text-gray-300 hover:text-white transition">Settore Giovanile</a>
+                    <a href="contatti.html" class="text-gray-300 hover:text-white transition">Contatti</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-extrabold text-fzblue-dark mb-8 text-center">La Nostra Società</h1>
+        
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-12 text-lg leading-relaxed text-gray-600">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">La Storia</h2>
+            <p class="mb-4">
+                La Polisportiva Fornace Zarattini rappresenta da decenni un punto di riferimento per lo sport e l'aggregazione nella prima periferia di Ravenna. Nata dalla passione di un gruppo di cittadini, la società ha sempre messo al centro i valori del rispetto, dell'impegno e della crescita umana prima ancora che sportiva.
+            </p>
+            <p>
+                I nostri colori, il bianco e l'azzurro, sono scesi in campo accompagnando intere generazioni di ragazzi, dal settore giovanile fino alla prima squadra, rendendo il campo di Via Fabbri una vera e propria seconda casa per la comunità.
+            </p>
+        </div>
+
+        <h2 class="text-3xl font-bold text-fzblue-dark mb-6 text-center">Organigramma</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card Dirigente -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <div class="w-16 h-16 bg-blue-100 text-fzblue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">👤</div>
+                <h3 class="font-bold text-lg text-gray-900">Presidente</h3>
+                <p class="text-gray-500">Nome Cognome</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <div class="w-16 h-16 bg-blue-100 text-fzblue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">👤</div>
+                <h3 class="font-bold text-lg text-gray-900">Vice Presidente</h3>
+                <p class="text-gray-500">Nome Cognome</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <div class="w-16 h-16 bg-blue-100 text-fzblue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">👤</div>
+                <h3 class="font-bold text-lg text-gray-900">Segreteria</h3>
+                <p class="text-gray-500">Nome Cognome</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Inserisci qui il tag Footer identico alla index.html -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">&copy; 2026 S.P. Fornace Zarattini. Tutti i diritti riservati.</footer>
+</body>
+</html>
