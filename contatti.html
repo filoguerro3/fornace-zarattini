@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | S.P. Fornace Zarattini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { fzblue: { DEFAULT: '#2563eb', dark: '#1e40af' } } } } }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-fzblue-dark text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="font-bold text-xl flex items-center gap-2">⚽ S.P. Fornace Zarattini</a>
+                <nav class="hidden md:flex space-x-6 font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="societa.html" class="text-gray-300 hover:text-white transition">Società</a>
+                    <a href="prima-squadra.html" class="text-gray-300 hover:text-white transition">Prima Squadra</a>
+                    <a href="settore-giovanile.html" class="text-gray-300 hover:text-white transition">Settore Giovanile</a>
+                    <a href="contatti.html" class="text-white hover:text-blue-300 transition">Contatti</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+        
+        <!-- Info e Form -->
+        <div>
+            <h1 class="text-4xl font-extrabold text-fzblue-dark mb-6">Contattaci</h1>
+            <p class="text-gray-600 mb-8">Hai bisogno di informazioni per le iscrizioni o per la prima squadra? Scrivici o vieni a trovarci al campo!</p>
+            
+            <div class="space-y-4 mb-8 text-gray-800 font-medium">
+                <p class="flex items-center gap-3">📍 Via Monsignor Giuseppe Fabbri 4, 48124 Ravenna (RA)</p>
+                <p class="flex items-center gap-3">📞 Telefono: 0544 462243</p>
+                <p class="flex items-center gap-3">✉️ Email: fornacezarattini@tiscali.it</p>
+            </div>
+
+            <!-- Modulo Contatti (Serverless: usa action="https://formspree.io/f/TUO-CODICE" previa registrazione gratuita) -->
+            <form action="#" method="POST" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Nome e Cognome</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-fzblue" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <input type="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-fzblue" required>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Messaggio</label>
+                    <textarea rows="4" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-fzblue" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-fzblue text-white font-bold py-3 px-4 rounded-lg hover:bg-fzblue-dark transition">Invia Messaggio</button>
+            </form>
+        </div>
+
+        <!-- Mappa Google Maps -->
+        <div class="h-full min-h-[400px] bg-gray-200 rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                src="https://maps.google.com/maps?q=Via%20Monsignor%20Giuseppe%20Fabbri%204%2C%20Ravenna&t=&z=15&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">&copy; 2026 S.P. Fornace Zarattini. Tutti i diritti riservati.</footer>
+</body>
+</html>
