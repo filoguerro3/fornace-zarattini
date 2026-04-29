@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settore Giovanile | S.P. Fornace Zarattini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { fzblue: { DEFAULT: '#2563eb', dark: '#1e40af' } } } } }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-fzblue-dark text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="font-bold text-xl flex items-center gap-2">⚽ S.P. Fornace Zarattini</a>
+                <nav class="hidden md:flex space-x-6 font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="societa.html" class="text-gray-300 hover:text-white transition">Società</a>
+                    <a href="prima-squadra.html" class="text-gray-300 hover:text-white transition">Prima Squadra</a>
+                    <a href="settore-giovanile.html" class="text-white hover:text-blue-300 transition">Settore Giovanile</a>
+                    <a href="contatti.html" class="text-gray-300 hover:text-white transition">Contatti</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-fzblue-dark mb-4">Settore Giovanile</h1>
+            <p class="text-xl text-gray-600">Cresciamo i talenti di domani, divertendoci oggi.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- Categoria -->
+            <div class="bg-white rounded-2xl shadow-sm border-l-4 border-fzblue p-6">
+                <h3 class="text-2xl font-bold text-gray-900">Allievi / Giovanissimi</h3>
+                <p class="text-gray-600 mt-2">Allenamenti incentrati su tecnica, tattica e gioco di squadra, preparando i ragazzi per l'agonismo.</p>
+            </div>
+            <!-- Categoria -->
+            <div class="bg-white rounded-2xl shadow-sm border-l-4 border-green-500 p-6">
+                <h3 class="text-2xl font-bold text-gray-900">Esordienti / Pulcini</h3>
+                <p class="text-gray-600 mt-2">La fase dell'apprendimento delle basi del calcio, in un ambiente sano dove l'inclusione è fondamentale.</p>
+            </div>
+            <!-- Categoria -->
+            <div class="bg-white rounded-2xl shadow-sm border-l-4 border-yellow-500 p-6">
+                <h3 class="text-2xl font-bold text-gray-900">Primi Calci / Piccoli Amici</h3>
+                <p class="text-gray-600 mt-2">Avviamento allo sport tramite il gioco. Imparare la coordinazione motoria con il sorriso.</p>
+            </div>
+            <!-- Iscrizioni CTA -->
+            <div class="bg-fzblue text-white rounded-2xl shadow-md p-6 flex flex-col justify-center items-center text-center">
+                <h3 class="text-2xl font-bold mb-2">Iscrizioni Aperte!</h3>
+                <p class="mb-4">Vuoi far parte della nostra famiglia? Contattaci per i moduli e le informazioni sulle quote associative.</p>
+                <a href="contatti.html" class="bg-white text-fzblue font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition">Richiedi Info</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">&copy; 2026 S.P. Fornace Zarattini. Tutti i diritti riservati.</footer>
+</body>
+</html>
