@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.P. Fornace Zarattini | Sito Ufficiale</title>
+    <meta name="description" content="Sito ufficiale della polisportiva A.S.D. Fornace Zarattini. Calcio, settore giovanile e passione a Ravenna.">
+    
+    <!-- Integrazione Tailwind CSS via CDN (Ottimale per GitHub Pages base) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fzblue: {
+                            light: '#3b82f6', // Azzurro chiaro
+                            DEFAULT: '#2563eb', // Azzurro Fornace
+                            dark: '#1e40af', // Blu scuro per contrasti
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="bg-fzblue-dark text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 font-bold text-xl tracking-tight">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <!-- Qui potrai inserire il tag <img> del logo -->
+                        ⚽ S.P. Fornace Zarattini
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-6 font-medium">
+                    <a href="index.html" class="text-white hover:text-blue-300 transition">Home</a>
+                    <a href="societa.html" class="text-gray-300 hover:text-white transition">Società</a>
+                    <a href="prima-squadra.html" class="text-gray-300 hover:text-white transition">Prima Squadra</a>
+                    <a href="settore-giovanile.html" class="text-gray-300 hover:text-white transition">Settore Giovanile</a>
+                    <a href="contatti.html" class="text-gray-300 hover:text-white transition">Contatti</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Bianco/Azzurro) -->
+    <main class="flex-grow">
+        <section class="bg-gradient-to-b from-fzblue to-fzblue-dark text-white py-24">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">A.S.D. Pol. Fornace Zarattini</h1>
+                <p class="text-lg md:text-2xl mb-10 font-light text-blue-100">Dal campo al cuore di Ravenna: la nostra passione, la vostra squadra.</p>
+                <div class="space-x-4 flex justify-center">
+                    <a href="prima-squadra.html" class="bg-white text-fzblue-dark font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition transform hover:scale-105">La Prima Squadra</a>
+                    <a href="settore-giovanile.html" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-fzblue-dark transition">Settore Giovanile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Prossima Partita & Ultime News -->
+        <section class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Widget Prossima Partita -->
+            <div class="col-span-1 bg-white rounded-2xl shadow-sm border border-gray-100 p-6 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-fzblue"></div>
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 flex items-center gap-2">
+                    🗓️ Prossima Partita
+                </h2>
+                <div class="flex justify-between items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <div class="text-center font-bold text-gray-700 w-2/5">Fornace Zarattini</div>
+                    <div class="text-xl font-black text-fzblue w-1/5 text-center">VS</div>
+                    <div class="text-center font-bold text-gray-700 w-2/5">Avversario FC</div>
+                </div>
+                <p class="text-center mt-6 text-sm text-gray-500 font-medium">📍 Campo Sportivo di Via Fabbri 4</p>
+                <p class="text-center mt-1 text-sm text-gray-500">Domenica ore 15:30</p>
+            </div>
+
+            <!-- Ultime News -->
+            <div class="col-span-1 md:col-span-2">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Ultime Notizie</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- News Card 1 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition cursor-pointer">
+                        <div class="h-40 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
+                            [ Immagine Partita ]
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs text-fzblue font-bold uppercase tracking-wider">Prima Squadra</span>
+                            <h3 class="text-lg font-bold mt-2 text-gray-900">Vittoria importante nell'ultimo turno</h3>
+                            <p class="text-gray-600 text-sm mt-2 line-clamp-2">I ragazzi portano a casa 3 punti fondamentali per il campionato, ottima prestazione corale.</p>
+                        </div>
+                    </div>
+                    <!-- News Card 2 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition cursor-pointer">
+                        <div class="h-40 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
+                            [ Immagine Squadra Giovanile ]
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs text-fzblue font-bold uppercase tracking-wider">Giovanili</span>
+                            <h3 class="text-lg font-bold mt-2 text-gray-900">Iscrizioni aperte per la nuova stagione</h3>
+                            <p class="text-gray-600 text-sm mt-2 line-clamp-2">Vieni a giocare con noi! Scopri le categorie disponibili per il nuovo anno sportivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">S.P. Fornace Zarattini</h4>
+                <p class="text-sm leading-relaxed">A.S.D. Polisportiva Fornace Zarattini.<br>Passione, sport e territorio dal cuore della provincia di Ravenna.</p>
+            </div>
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">Contatti Utili</h4>
+                <ul class="text-sm space-y-3">
+                    <li class="flex items-start gap-2"><span>📍</span> Via Monsignor Giuseppe Fabbri 4<br>48124 Ravenna (RA)</li>
+                    <li class="flex items-center gap-2"><span>📞</span> 0544 462243</li>
+                    <li class="flex items-center gap-2"><span>✉️</span> fornacezarattini@tiscali.it</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">Seguici</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Facebook</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm mt-12 border-t border-gray-800 pt-6">
+            &copy; 2026 S.P. Fornace Zarattini. Tutti i diritti riservati.
+        </div>
+    </footer>
+
+</body>
+</html>
